@@ -50,7 +50,7 @@
     .hero-copy{align-self:center;position:relative;z-index:1}
     .seal{width:108px;filter:drop-shadow(0 14px 20px rgba(37,74,116,.18));margin-bottom:16px}
     .hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.7rem,5vw,7.2rem);line-height:.84;color:var(--navy-deep);font-weight:400;margin:0;letter-spacing:-.05em}
-    .hero h1 .amp{display:block;color:var(--gold);font-size:.62em;font-family:"Snell Roundhand","Segoe Script",cursive;letter-spacing:0;margin:.14em 0 .08em}
+    
     .hero .tagline{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:clamp(1.15rem,2vw,1.55rem);line-height:1.65;color:#50627a;margin:20px 0 26px;max-width:560px}
     .mini-meta{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 28px;padding:0;list-style:none}
     .mini-meta li{background:rgba(255,255,255,.74);border:1px solid rgba(187,119,32,.18);border-radius:999px;padding:12px 16px;color:var(--navy);font-weight:700;box-shadow:0 8px 22px rgba(8,35,76,.05)}
@@ -242,7 +242,36 @@
   }
 } 
   
-  
+  .couple-names {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0.18em;
+
+  margin: 12px 0;
+  color: var(--navy-deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+
+.couple-names .amp {
+  display: inline;
+  color: var(--gold);
+  font-family: "Snell Roundhand", "Segoe Script", cursive;
+  font-size: 0.65em;
+  line-height: 1;
+}
+    @media (max-width: 640px) {
+  .couple-names {
+    font-size: clamp(1.75rem, 9vw, 2.7rem);
+    gap: 0.12em;
+  }
+}
   </style>
 </head>
 <body>
@@ -255,8 +284,10 @@
         <div class="hero-copy" data-reveal>
           
           <div class="eyebrow">Σας προσκαλούμε στον γάμο μας</div>
-          <h1>Λουκία<span class="amp">&</span>Χρήστος</h1>
-          <p class="tagline">«Στην πιο όμορφη στιγμή της ζωής μας, θα χαρούμε να είστε δίπλα μας.»</p>
+           <h1 class="couple-names">
+  Λουκία <span class="amp">&amp;</span> Χρήστος
+</h1>
+          <p class="tagline">Στην πιο όμορφη στιγμή της ζωής μας,<br> θα χαρούμε να είστε δίπλα μας.</p>
          <div class="wedding-date">
   <span class="wedding-day">Σάββατο</span>
 
@@ -421,7 +452,7 @@
   <footer>
     <div class="container">
       
-      <div class="names">Λουκία &amp; Χρήστος</div>
+      <div class="names">Χρήστος &amp; Λουκία</div>
       <div>19 Σεπτεμβρίου 2026 · Λάρισα</div>
     </div>
   </footer>
